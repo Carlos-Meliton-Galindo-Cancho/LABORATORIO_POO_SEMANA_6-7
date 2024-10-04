@@ -1,0 +1,18 @@
+@startuml
+title Diagrama de Clases: Vehiculo y Coche
+
+class Vehiculo {
+    - marca: String
+    + Vehiculo(marca: String)
+    + mostrarMarca()
+}
+
+class Coche {
+    - puertas: int
+    + Coche(marca: String, puertas: int)
+    + mostrarInfo()
+}
+
+Vehiculo <|-- Coche
+
+@enduml
